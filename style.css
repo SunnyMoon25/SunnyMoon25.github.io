@@ -142,3 +142,15 @@ input[type="checkbox"] {
 .AboutOnHomepage h2 {
   white-space: nowrap;
 }
+
+.homepageImg {
+  float: right;
+  padding: 5% 10%;
+  width: 49%;
+  text-align: justify;
+  height: 100%px;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+}
