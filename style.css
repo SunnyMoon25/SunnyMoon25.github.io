@@ -106,14 +106,14 @@ input[type="checkbox"] {
 }
 
 .mainDiv {
-  padding-top: 15px;
+  padding-top: 40px;
 }
 
 .contentHeader {
   text-align: center;
   z-index: -1;
   width: 100%;
-  padding: 0 30px;
+  padding: 30px;
   color: #1b1b1b;
 }
 .contentHeader {
@@ -123,15 +123,15 @@ input[type="checkbox"] {
 
 .AboutOnHomepage {
   padding: 5% 10%;
-  width: 50%;
+  width: 100%;
   text-align: justify;
   height: 100px;
   align-items: center;
+  display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
   .AboutOnHomepage {
-    padding: 5% 10%;
     width: 100%;
     text-align: justify;
     height: 100px;
@@ -143,14 +143,7 @@ input[type="checkbox"] {
   white-space: nowrap;
 }
 
-.homepageImg {
-  float: right;
+.recentUpdates {
+  padding-top: 40px;
   padding: 5% 10%;
-  width: 49%;
-  text-align: justify;
-  height: 100%px;
-  align-items: center;
-}
-
-@media screen and (max-width: 768px) {
 }
