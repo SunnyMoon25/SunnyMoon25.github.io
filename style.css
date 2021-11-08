@@ -113,7 +113,7 @@ input[type="checkbox"] {
   text-align: center;
   z-index: -1;
   width: 100%;
-  padding: 30px;
+  padding-top: 10px;
   color: #1b1b1b;
 }
 .contentHeader {
@@ -125,7 +125,6 @@ input[type="checkbox"] {
   padding: 5% 10%;
   width: 100%;
   text-align: justify;
-  height: 100px;
   align-items: center;
   display: inline-block;
 }
@@ -144,6 +143,68 @@ input[type="checkbox"] {
 }
 
 .recentUpdates {
-  padding-top: 40px;
-  padding: 5% 10%;
+  padding-top: 10px;
+  padding: 0% 10%;
+  width: 60%;
+}
+
+.recentUpdates h2 {
+  text-decoration: underline;
+}
+
+.updateHome1 {
+  margin-top: 2.5%;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.par1 {
+  padding-top: 2%;
+  float: left;
+  margin-left: 10px;
+}
+
+.img1 {
+  padding-top: 2%;
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+
+.updateHome2 {
+  margin-top: 2.5%;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.par2 {
+  padding-top: 2%;
+  float: left;
+  margin-left: 10px;
+}
+
+.img2 {
+  padding-top: 2%;
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+
+.updateHome3 {
+  margin-top: 2.5%;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.par3 {
+  padding-top: 2%;
+  float: left;
+  margin-left: 10px;
+}
+
+.img3 {
+  padding-top: 2%;
+  width: 100px;
+  height: 100px;
+  float: right;
 }
