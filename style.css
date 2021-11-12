@@ -121,6 +121,17 @@ input[type="checkbox"] {
   font-weight: 400;
 }
 
+@media screen and (max-width: 768px) {
+  .contentHeader {
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding-top: 10px;
+    color: #1b1b1b;
+    padding: 2px;
+  }
+}
+
 .AboutOnHomepage {
   padding: 5% 10%;
   width: 100%;
@@ -142,20 +153,35 @@ input[type="checkbox"] {
   white-space: nowrap;
 }
 
-.recentUpdates {
-  padding-top: 10px;
-  padding: 0% 10%;
-  width: 60%;
+.mainUpdate {
+  padding-left: 5%;
 }
 
-.recentUpdates h2 {
-  text-decoration: underline;
+@media screen and (max-width: 768px) {
+  .mainUpdate {
+    padding-left: 5%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.recentUpdates {
+  padding-bottom: 3%;
+}
+
+@media screen and (max-width: 768px) {
+  .recentUpdates {
+    padding-top: 4%;
+  }
 }
 
 .updateHome1 {
-  margin-top: 2.5%;
+  padding-bottom: 3%;
+  margin-top: 0%;
   margin-bottom: 20px;
   display: flex;
+  width: 70%;
 }
 
 .par1 {
@@ -171,8 +197,26 @@ input[type="checkbox"] {
   float: right;
 }
 
+@media screen and (max-width: 768px) {
+  .updateHome1 {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 20px;
+  }
+  .par1 {
+    margin-left: 10px;
+  }
+  .img1 {
+    padding-top: 2%;
+    width: 150px;
+    height: 100px;
+  }
+}
+
 .updateHome2 {
-  margin-top: 2.5%;
+  padding-bottom: 3%;
+  width: 70%;
+  margin-top: 0%;
   margin-bottom: 20px;
   display: flex;
 }
@@ -190,8 +234,25 @@ input[type="checkbox"] {
   float: right;
 }
 
+@media screen and (max-width: 768px) {
+  .updateHome2 {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 20px;
+  }
+  .par2 {
+    margin-left: 10px;
+  }
+  .img2 {
+    padding-top: 2%;
+    width: 150px;
+    height: 100px;
+  }
+}
+
 .updateHome3 {
-  margin-top: 2.5%;
+  width: 70%;
+  margin-top: 0%;
   margin-bottom: 20px;
   display: flex;
 }
@@ -207,4 +268,20 @@ input[type="checkbox"] {
   width: 100px;
   height: 100px;
   float: right;
+}
+
+@media screen and (max-width: 768px) {
+  .updateHome3 {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 20px;
+  }
+  .par3 {
+    margin-left: 10px;
+  }
+  .img3 {
+    padding-top: 2%;
+    width: 150px;
+    height: 100px;
+  }
 }
