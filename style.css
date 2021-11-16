@@ -23,7 +23,7 @@ nav {
 }
 nav .logo {
   color: #fff;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
 }
 nav ul {
@@ -37,9 +37,9 @@ nav ul li {
 nav ul li a {
   color: #f2f2f2;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  padding: 8px 15px;
+  padding: 8px 14px;
   border-radius: 5px;
   letter-spacing: 1px;
   transition: all 0.3s ease;
@@ -361,20 +361,20 @@ input[type="checkbox"] {
 }
 
 .bothGoogleForms {
-  padding-top: 15%;
+  padding-top: 3%;
   display: inline-block;
   text-align: center;
   width: 100%;
 }
 
 .googleFormTv {
-  padding-left: 3%;
+  padding-left: 4%;
   display: inline-block;
 }
 
 .googleFormTv iframe {
-  width: 500px;
-  height: 600px;
+  width: 700px;
+  height: 900px;
   text-align: center;
   display: inline-block;
 }
@@ -382,11 +382,12 @@ input[type="checkbox"] {
 .googleFormMovie {
   padding-left: 3%;
   display: inline-block;
+  margin-bottom: 10%;
 }
 
 .googleFormMovie iframe {
-  width: 500px;
-  height: 600px;
+  width: 700px;
+  height: 900px;
   text-align: center;
   display: inline-block;
 }
@@ -407,19 +408,27 @@ input[type="checkbox"] {
   .googleFormTv iframe {
     width: 100%;
     padding-left: 2%;
+    height: 976px;
   }
 
   .googleFormMovie {
     text-align: center;
     width: 100%;
     padding-top: 11%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
   }
 
   .googleFormMovie iframe {
     padding-left: 2%;
     width: 90%;
+    height: 976px;
   }
 }
 
 /*Google form*/
+
+/*Contact Page*/
+.content {
+  color: #111;
+}
+/*Contact Page*/
