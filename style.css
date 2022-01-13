@@ -236,7 +236,7 @@ input[type="checkbox"] {
 .img1 {
   text-align: center;
   padding-top: 2%;
-  width: 100px;
+  width: 200px;
   height: 100px;
 }
 
@@ -252,7 +252,7 @@ input[type="checkbox"] {
   .img1 {
     margin-top: 12%;
     margin-bottom: 10%;
-    width: 150px;
+    width: 200px;
     height: 100px;
   }
 }
@@ -272,7 +272,7 @@ input[type="checkbox"] {
 .img2 {
   text-align: center;
   margin-top: 2%;
-  width: 100px;
+  width: 200px;
   height: 100px;
 }
 
@@ -288,7 +288,7 @@ input[type="checkbox"] {
   .img2 {
     margin-top: 12%;
     margin-bottom: 10%;
-    width: 150px;
+    width: 200px;
     height: 100px;
   }
 }
@@ -307,8 +307,8 @@ input[type="checkbox"] {
 .img3 {
   text-align: center;
   margin-top: 2%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 300px;
 }
 
 @media screen and (max-width: 768px) {
@@ -323,7 +323,7 @@ input[type="checkbox"] {
   .img3 {
     margin-top: 12%;
     margin-bottom: 10%;
-    width: 150px;
+    width: 200px;
     height: 100px;
   }
 }
@@ -818,3 +818,123 @@ button[type="submit"] {
 }
 
 /*Movies*/
+
+/*tv-shows*/
+
+.content {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20%;
+}
+
+.tvshowHeading {
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding-top: 2%;
+  color: #1b1b1b;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .tvshowHeading {
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding-top: 2%;
+    color: #1b1b1b;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.tvshowTitle1 {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.tvshow1 {
+  text-align: center;
+  padding-bottom: 3%;
+  margin-top: 0%;
+  border-bottom: 1px solid white;
+}
+
+.tvshowPar1 {
+  padding-top: 2%;
+  margin-left: 10px;
+}
+
+.tvshowimg1 {
+  text-align: center;
+  margin-top: 2%;
+  width: 200px;
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .tvshow1 {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-right: 20px;
+  }
+  .tvshowPar1 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .tvshowimg1 {
+    margin-top: 5%;
+    width: 150px;
+    height: 100px;
+  }
+}
+
+.tvshowTitleRepeat {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.tvshowRepeat {
+  text-align: center;
+  padding-bottom: 3%;
+  margin-top: 2%;
+  border-bottom: 1px solid white;
+}
+
+.tvshowParRepeat {
+  padding-top: 2%;
+  margin-left: 10px;
+}
+
+.tvshowimgRepeat {
+  text-align: center;
+  margin-top: 2%;
+  width: 200px;
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .tvshowRepeat {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 20px;
+  }
+  .tvshowParRepeat {
+    margin-left: 10px;
+  }
+  .tvshowimgRepeat {
+    margin-top: 12%;
+    margin-bottom: 10%;
+    width: 150px;
+    height: 100px;
+  }
+}
+
+/*tv-shows*/
