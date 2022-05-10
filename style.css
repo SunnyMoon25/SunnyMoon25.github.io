@@ -1,0 +1,943 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #222;
+}
+
+nav {
+  display: flex;
+  height: 110px;
+  width: 100%;
+  background: #192841;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 2px;
+}
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+@media (max-width: 1000px) {
+  nav {
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none;
+    color: cyan;
+  }
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding-bottom: 1%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 2%;
+    font-size: 14px;
+  }
+}
+
+/* Footer */
+
+/*home page*/
+
+.contentHeader {
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding-top: 2%;
+  color: #1b1b1b;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .contentHeader {
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding-top: 10px;
+    color: #1b1b1b;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.AboutOnHomepage {
+  padding: 5% 10%;
+  padding-top: 2%;
+  padding-bottom: 4%;
+  width: 100%;
+  text-align: justify;
+  align-items: center;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .AboutOnHomepage {
+    padding-top: 15%;
+    width: 100%;
+    text-align: justify;
+    height: 100px;
+    text-align: center;
+  }
+
+  .AboutOnHomepage p {
+    text-align: justify;
+  }
+}
+
+.AboutOnHomepage h2 {
+  white-space: nowrap;
+}
+
+.mainUpdate {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .mainUpdate {
+    width: 100%;
+  }
+}
+
+.recentUpdates {
+  padding-bottom: 3%;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .recentUpdates {
+    padding-top: 20%;
+  }
+}
+
+.up1Home {
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.up2Home {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.up3Home {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.updateHome1 {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 3%;
+  margin-top: 0%;
+  border-bottom: 1px solid white;
+}
+
+.par1 {
+  padding-top: 2%;
+  padding-left: 5%;
+}
+
+.img1 {
+  text-align: center;
+  padding-top: 2%;
+  width: 40%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .updateHome1 {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 20px;
+  }
+  .par1 {
+    margin-left: 10px;
+  }
+  .img1 {
+    margin-top: 12%;
+    margin-bottom: 10%;
+    width: 95%;
+    height: 100%;
+  }
+}
+
+.updateHome2 {
+  text-align: center;
+  padding-bottom: 3%;
+  margin-top: 0%;
+  border-bottom: 1px solid white;
+}
+
+.par2 {
+  text-align: center;
+  padding-top: 2%;
+}
+
+.img2 {
+  text-align: center;
+  margin-top: 2%;
+  width: 40%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .updateHome2 {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 20px;
+  }
+  .par2 {
+    margin-left: 10px;
+  }
+  .img2 {
+    margin-top: 12%;
+    margin-bottom: 10%;
+    width: 300px;
+    height: 100%;
+  }
+}
+
+.updateHome3 {
+  text-align: center;
+  padding-bottom: 10%;
+  margin-top: 0%;
+}
+
+.par3 {
+  padding-top: 2%;
+  margin-left: 10px;
+}
+
+.img3 {
+  text-align: center;
+  margin-top: 2%;
+  width: 40%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .updateHome3 {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 20px;
+  }
+  .par3 {
+    margin-left: 10px;
+  }
+  .img3 {
+    margin-top: 12%;
+    margin-bottom: 10%;
+    width: 75%;
+    height: 100%;
+  }
+}
+
+/*home page*/
+
+/*Google form*/
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding-bottom: 10%;
+  }
+}
+
+.googleFormHeading {
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding-top: 2%;
+  color: #1b1b1b;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .googleFormHeading {
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding-top: 2%;
+    color: #1b1b1b;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.bothGoogleForms {
+  padding-top: 3%;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.googleFormTv {
+  padding-left: 4%;
+  display: inline-block;
+}
+
+.googleFormTv iframe {
+  width: 700px;
+  height: 900px;
+  text-align: center;
+  display: inline-block;
+}
+
+.googleFormMovie {
+  padding-left: 3%;
+  display: inline-block;
+  margin-bottom: 10%;
+}
+
+.googleFormMovie iframe {
+  width: 700px;
+  height: 900px;
+  text-align: center;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .bothGoogleForms {
+    text-align: center;
+    width: 100%;
+  }
+
+  .googleFormTv {
+    text-align: center;
+    width: 90%;
+    padding-bottom: 11%;
+    border-bottom: 1px solid white;
+  }
+
+  .googleFormTv iframe {
+    width: 100%;
+    padding-left: 2%;
+    height: 976px;
+  }
+
+  .googleFormMovie {
+    text-align: center;
+    width: 100%;
+    padding-top: 11%;
+    margin-bottom: 15%;
+  }
+
+  .googleFormMovie iframe {
+    padding-left: 2%;
+    width: 90%;
+    height: 976px;
+  }
+}
+
+/*Google form*/
+
+/*Contact Page*/
+
+.ContactPageAll {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.socials {
+  width: 50%;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.checkMySocials {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .socials {
+    width: 100%;
+  }
+  .checkMySocials {
+    padding-top: 2%;
+  }
+}
+
+/*********************/
+
+.instagramFacebook {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.instagram {
+  width: 50%;
+  text-align: center;
+  padding-left: 14%;
+}
+
+.instagramImg img {
+  height: 120px;
+  width: 120px;
+}
+
+.instagramLink {
+  width: 116px;
+  width: 100%;
+}
+
+.instagramLink a {
+  font-size: 25px;
+}
+
+.facebook {
+  width: 50%;
+  text-align: center;
+  padding-right: 12%;
+}
+
+.facebookImg img {
+  height: 120px;
+  width: 120px;
+}
+
+.facebookLink {
+  width: 116px;
+  width: 100%;
+}
+
+.facebookLink a {
+  font-size: 25px;
+}
+
+/*********************/
+
+.twitterDiscord {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-top: 10%;
+}
+
+.discord {
+  width: 50%;
+  text-align: center;
+  padding-left: 14%;
+}
+
+.discordImg img {
+  height: 120px;
+  width: 120px;
+}
+
+.discordLink {
+  width: 116px;
+  width: 100%;
+}
+
+.discordLink a {
+  font-size: 25px;
+}
+
+.twitter {
+  width: 50%;
+  text-align: center;
+  padding-right: 12%;
+}
+
+.twitter img {
+  height: 120px;
+  width: 120px;
+}
+
+.twitterLink {
+  width: 116px;
+  width: 100%;
+}
+
+.twitterLink a {
+  font-size: 25px;
+}
+
+/*********************/
+
+.snapchatSteam {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-top: 10%;
+}
+
+.steam {
+  width: 50%;
+  text-align: center;
+  padding-left: 14%;
+}
+
+.steamImg img {
+  height: 120px;
+  width: 120px;
+}
+
+.steamLink {
+  width: 116px;
+  width: 100%;
+}
+
+.steamLink a {
+  font-size: 25px;
+}
+
+.snapchat {
+  width: 50%;
+  text-align: center;
+  padding-right: 12%;
+}
+
+.snapchatImg img {
+  height: 120px;
+  width: 120px;
+}
+
+.snapchatLink {
+  width: 116px;
+  width: 100%;
+}
+
+.snapchatLink a {
+  font-size: 25px;
+}
+
+/*********************/
+
+.ContactPageAll {
+  padding-bottom: 20%;
+  padding-top: 3%;
+}
+
+.contactForm {
+  width: 50%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+@media screen and (max-width: 768px) {
+  .contactForm {
+    text-align: center;
+    padding-top: 18%;
+    width: 100%;
+    padding-bottom: 10%;
+  }
+}
+
+.contactForm p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 5%;
+}
+
+.contactForm input,
+textarea {
+  display: block;
+  padding: 2%;
+  width: 100%;
+  background-color: white;
+  color: #111;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border: 3px solid #555;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type="email"]:focus {
+  border: 3px solid #555;
+}
+
+textarea[name="message"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+textarea[name="message"]:focus {
+  border: 3px solid #555;
+}
+
+button[type="submit"] {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/*Contact Page*/
+
+/*Movies*/
+
+.content {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.MovieHeading {
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding-top: 2%;
+  color: #1b1b1b;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .MovieHeading {
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding-top: 2%;
+    color: #1b1b1b;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.movieTitle1 {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.movie1 {
+  text-align: center;
+  padding-bottom: 3%;
+  margin-top: 0%;
+  border-bottom: 1px solid white;
+}
+
+.moviePar1 {
+  padding-top: 2%;
+  margin-left: 10px;
+}
+
+.movieimg1 {
+  text-align: center;
+  margin-top: 2%;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .movie1 {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-right: 20px;
+  }
+  .moviePar1 {
+    margin-left: 10px;
+  }
+  .movieimg1 {
+    margin-top: 5%;
+    width: 150px;
+    height: 100px;
+  }
+}
+
+.movieTitleRepeat {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.movieRepeat {
+  text-align: center;
+  padding-bottom: 3%;
+  margin-top: 2%;
+  border-bottom: 1px solid white;
+}
+
+.movieParRepeat {
+  padding-top: 2%;
+  margin-left: 10px;
+}
+
+.movieimgRepeat {
+  text-align: center;
+  margin-top: 2%;
+  width: 300px;
+  height: 169px;
+}
+
+@media screen and (max-width: 768px) {
+  .movieRepeat {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 20px;
+  }
+  .movieParRepeat {
+    margin-left: 10px;
+  }
+  .movieimgRepeat {
+    margin-top: 12%;
+    margin-bottom: 10%;
+    width: 300px;
+    height: 169px;
+  }
+}
+
+/*Movies*/
+
+/*tv-shows*/
+
+.content {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20%;
+}
+
+.tvshowHeading {
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding-top: 2%;
+  color: #1b1b1b;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .tvshowHeading {
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding-top: 2%;
+    color: #1b1b1b;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.tvshowTitle1 {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.tvshow1 {
+  text-align: center;
+  padding-bottom: 3%;
+  margin-top: 0%;
+  border-bottom: 1px solid white;
+}
+
+.tvshowPar1 {
+  padding-top: 2%;
+  margin-left: 10px;
+}
+
+.tvshowimg1 {
+  text-align: center;
+  margin-top: 2%;
+  width: 300px;
+  height: 169px;
+}
+
+@media screen and (max-width: 768px) {
+  .tvshow1 {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-right: 20px;
+  }
+  .tvshowPar1 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .tvshowimg1 {
+    margin-top: 5%;
+    width: 300px;
+    height: 169px;
+  }
+}
+
+.tvshowTitleRepeat {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.tvshowRepeat {
+  text-align: center;
+  padding-bottom: 3%;
+  margin-top: 2%;
+  border-bottom: 1px solid white;
+}
+
+.tvshowParRepeat {
+  padding-top: 2%;
+  margin-left: 10px;
+}
+
+.tvshowimgRepeat {
+  text-align: center;
+  margin-top: 2%;
+  width: 300px;
+  height: 169px;
+}
+
+@media screen and (max-width: 768px) {
+  .tvshowRepeat {
+    width: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 20px;
+  }
+  .tvshowParRepeat {
+    margin-left: 10px;
+  }
+  .tvshowimgRepeat {
+    margin-top: 12%;
+    margin-bottom: 10%;
+    width: 300px;
+    height: 169px;
+  }
+}
+
+.themaidimg {
+  width: 200px !important;
+  height: 300px !important;
+}
+
+/*tv-shows*/
