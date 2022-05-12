@@ -699,6 +699,26 @@ button[type="submit"] {
 
 /*Contact Page*/
 
+/*Thank You Page*/
+.thankYouMain {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.sendingEmail {
+  font-size: 50px;
+}
+
+.soonAsPos {
+  font-size: 25px;
+  padding-top: 1%;
+}
+
+.emailBackToHome {
+  font-size: 40px;
+}
+/*Thank You Page*/
+
 /*Movies*/
 
 .content {
